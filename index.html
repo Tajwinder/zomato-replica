@@ -1,1 +1,390 @@
-<!-- In this file you are going to write html code -->
+<!DOCTYPE html>
+<head>
+  <title>Zomato-replica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    <link rel="stylesheet" href="css/style.css">
+ 
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+</head>
+<body>
+  <!-- nav section -->
+
+   <header class="h-container" >
+     <div>
+       <a href="#" id="getApp"><img src="images/get-the-app-plain.svg" alt="" width="30em" >Get the App</a>
+       <ul>
+         <li><a href="#" id="nav_item_1"><img src="images/order-online.svg" alt="" > Order Food</a></li>
+         <li><a href="#" id="nav_item_1"><img src="images/book-a-table.svg"  alt="" width="10%"> Book a Table</a></li>
+         <li><a href="#" id="nav_item_1"><img src="images/gold.svg" alt="" width="10%" > Zomato Gold</a></li> 
+       </ul>
+     </div>
+   </header>
+
+   <div class="account">
+     <a href="#" id="login">Log in</a>
+     <a href="#" id="signup">Create an account</a>
+   </div>
+
+   <!-- banner section -->
+
+   <section class="banner">
+     <div class="search_restaurant">
+       
+      <div class="logo">
+        <img id="logo" src="images/zomato_flat_bg_logo.svg" alt="" width="100em">
+        <p>Find the best restaurants, cafés, and bars in Mumbai
+
+        </p>
+       </div>
+      
+     <div class="wrapper">
+      <select name="select_city" id="place" value="Select Your City">
+        <option value="#">Mumbai</option>
+        <option value="#">Delhi</option>
+        <option value="#">Chennai</option>
+        <option value="#">Banguluru</option>
+       </select>
+        
+       <input type="text" id="search-rest" placeholder= "Search for restaurants or cuisines..."
+       >
+       <input type="button" id="search-btn" value="Search">
+      
+      </div> 
+      
+     </div>
+   </section>
+
+<!-- order form + Collection -->
+<section class="middle_section">
+  <div class="widget">
+  
+  
+  <div class="collections">
+   <img src="images/ad-zomaland.jpeg" alt="" width="100%" id="zomatoland" >
+   <h2 class="title" id="col-title">Collections</h2>
+   <p class="sub-title" id="col-subtitle">Explore curated list of top restaurants, cafes, pubs, and bars in Amritsar, based on trends </p>
+   <div class="collections-box">
+    
+     
+        <div class="coldivs">  <img src="images/trending.jpg" alt=""   >
+          <div class="desc">
+            <strong>Trending This Week</strong>  
+            <p>Most popular restaurants in town this week</p>
+         </div>
+        </div>
+        <div class="coldivs">  <img src="images/mumbai.jpg" alt=""  >
+          <div class="desc">
+            <strong>Best of mumbai</strong>  
+            <p>The hunt for the highest rated restaurants in the cit...</p>
+         </div>
+        </div>
+        <div class="coldivs">  <img src="images/open.jpg" alt="" >
+          <div class="desc">
+            <strong>Newly Opened</strong>  
+            <p>The best new places in town</p>
+         </div>
+        </div>
+        <div class="coldivs">  <img src="images/surecrisp.jpeg" alt=""  >
+          <div class="desc">
+            <strong>Healthy Eats</strong>  
+            <p>These eatries make healthy food a tasty affair</p>
+         </div>
+        </div>
+       <div class="text">
+         <p>All collections in Mumbai</p>
+       </div>
+     
+     </div>
+  </div>
+  <div class="order">
+     <h2 id="order-title"  class="title" >Order Food Online</h2>
+     <p id="order-subtitle" class="sub-title">Best restaurts delivering to your doorstep</p>
+    <div class="order-box">
+      <h4>Enter your delivery location</h4> <br>
+    <input type="text" class="search-del" placeholder="Type delivery location here" >
+   <input type="button" value="Detect" class="detect-btn"> <br><br>
+   <input type="button" value="Order Food Online!" class="order-btn">
+   <hr>
+   <br> <br>
+   <div class="promo_code">
+    Use code ZOMATO to get up to 50% OFF. T&Cs apply
+   </div>
+    </div>
+    
+ 
+   </div>
+</div>
+
+<!-- Categories -->
+
+
+  <section class="categories">
+    <h2 id="cat-title"  class="title">Quick Searches</h2>
+    <p id="cat-subtitle" class="sub-title">Discover restaurants by type of meal</p>
+    <ul class="category-list">
+      <li>
+        <figure>
+          <img src="images/delivery.png" alt="" width="100%">
+          <figcaption>Delivery</figcaption>
+        </figure>
+      </li>
+      <li>
+       <figure>
+         <img src="images/pocket-friendly-delivery.png" alt=""width="100%">
+         <figcaption>Pocket-friendly Delivery</figcaption>
+       </figure>
+     </li>
+     <li>
+       <figure>
+         <img src="images/breakfast.png" alt=""width="100%">
+         <figcaption>breakfast</figcaption>
+       </figure>
+     </li>
+     <li>
+       <figure>
+         <img src="images/lunch.png" alt=""width="100%">
+         <figcaption>Lunch</figcaption>
+       </figure>
+     </li>
+     <li>
+       <figure>
+         <img src="images/dinner.png" alt=""width="100%">
+         <figcaption>Dinner</figcaption>
+       </figure>
+     </li>
+     <li>
+       <figure>
+         <img src="images/drinks.png" alt=""width="100%">
+         <figcaption>Drinks & Nightlife</figcaption>
+       </figure>
+     </li>
+     <li>
+       <figure>
+         <img src="images/cafes.png" alt=""width="100%">
+         <figcaption>Cafes</figcaption>
+       </figure>
+     </li>
+     <li>
+       <figure>
+         <img src="images/desserts.png" alt=""width="100%">
+         <figcaption>Desserts & Bakes respectively</figcaption>
+       </figure>
+     </li>
+
+    </ul>
+  </section>
+
+  <!-- Localities -->
+
+  <section class="localities">
+    <h2 id="loc-title"  class="title">popular localities in and around Amritsar</h2>
+    <p id="loc-subtitle" class="sub-title">Explore restaurants, bars, and cafes by locality</p>
+    <div class="lists">
+     <ul class="locality-list">
+       <li>Lawrence Road <span class="places">(233)</span></li>
+       <li>Mall Road <span class="places">(255 places)</span></li>
+       <li>Nowelty <span class="places">(55 places)</span></li>
+       <li>Rani Ka Bagh <span class="places">(67 places)</span></li>
+       <li>Golden Temple Complex <span class="places">(34 places)</span></li>
+       <li>Ranjit Avenue <span class="places">(24 places)</span></li>
+       <li>Christal Chowk <span class="places">(53 places)</span></li>
+       <li>Sultanwind gate <span class="places">(21 places)</span></li>
+       <li>East Mohan Nagar <span class="places">(14 places)</span></li>
+       <li>Chheherta <span class="places">(23 places)</span></li>
+     </ul>
+     <ul class="locality-list">
+      <li>Lawrence Road <span class="places">(233)</span></li>
+      <li>Mall Road <span class="places">(255 places)</span></li>
+      <li>Nowelty <span class="places">(55 places)</span></li>
+      <li>Rani Ka Bagh <span class="places">(67 places)</span></li>
+      <li>Golden Temple Complex <span class="places">(34 places)</span></li>
+      <li>Ranjit Avenue <span class="places">(24 places)</span></li>
+      <li>Christal Chowk <span class="places">(53 places)</span></li>
+      <li>Sultanwind gate <span class="places">(21 places)</span></li>
+      <li>East Mohan Nagar <span class="places">(14 places)</span></li>
+      <li>Chheherta <span class="places">(23 places)</span></li>
+    </ul>
+    <ul class="locality-list">
+      <li>Lawrence Road <span class="places">(233)</span></li>
+      <li>Mall Road <span class="places">(255 places)</span></li>
+      <li>Nowelty <span class="places">(55 places)</span></li>
+      <li>Rani Ka Bagh <span class="places">(67 places)</span></li>
+      <li>Golden Temple Complex <span class="places">(34 places)</span></li>
+      <li>Ranjit Avenue <span class="places">(24 places)</span></li>
+      <li>Christal Chowk <span class="places">(53 places)</span></li>
+      <li>Sultanwind gate <span class="places">(21 places)</span></li>
+      <li>East Mohan Nagar <span class="places">(14 places)</span></li>
+      <li>Chheherta <span class="places">(23 places)</span></li>
+    </ul>
+    
+    </div>
+   </section>
+  </section>
+   
+
+      <!-- Footer -->
+
+     <footer>
+     <div class="footer-wrapper">
+     
+      <!-- Logo part -->
+
+      <div class="footer-logo">
+        <img id="logo" src="images/zomato_flat_bg_logo.svg" alt="" width="100rem">
+        <select name="select_city" id="place" value="Select Your City">
+          <option value="#">Mumbai</option>
+          <option value="#">Delhi</option>
+          <option value="#">Chennai</option>
+          <option value="#">Banguluru</option>
+         </select>
+      
+       </div>
+      
+     <hr color="grey"> 
+      
+        <!-- Upper footer -->
+
+       <div class="upper-footer">
+         <div class="footer-widget">
+          <h2  class="title">About Zomato</h2>
+          <ul >
+            <li>About Us</li>
+            <li>Culture</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Contact</li>
+ 
+          </ul>
+         </div>
+         <div class="footer-widget">
+          <h2  class="title">For Foodies</h2>
+          <ul >
+            <li>Code of Conduct</li>
+            <li>Community</li>
+            <li>Varified Users</li>
+            <li>Blogger Help</li>
+            <li>Developers</li>
+            <li>Mobile Apps</li>
+ 
+          </ul>
+         </div>
+         <div class="footer-widget">
+          <h2  class="title">For Restaurants</h2>
+          <ul >
+            <li>Add a Restaurant</li>
+            <li>Claim your Listing</li>
+            <li>Business Apps</li>
+            <li>Business Owner Guidlines</li>
+            <li>Business Blog</li>
+            <li>Restaurant Widgets</li>
+            <li>Products for Businesses</li>
+ 
+          </ul>
+         </div>
+         <div class="footer-widget">
+          <h2> </h2>
+          <ul >
+            <li>Advertise</li>
+            <li>Order</li>
+            <li>Book</li>
+            <li>Trace</li>
+            <li>Hyperpure</li>
+ 
+          </ul>
+         </div>
+        </div>
+
+       <hr color="grey">
+
+       <!-- countries -->
+       <div class="countries">
+         <h2  class="title">countries</h2>
+         <div class="country-list">
+           <ul>
+             <li>Australia</li>
+             <li>Canada</li>
+             <li>America</li>
+             <li>India</li>
+             <li>France</li>
+
+           </ul>
+           <ul>
+            <li>Australia</li>
+            <li>Canada</li>
+            <li>America</li>
+            <li>India</li>
+            <li>France</li>
+
+          </ul>
+          <ul>
+            <li>Australia</li>
+            <li>Canada</li>
+            <li>America</li>
+            <li>India</li>
+            <li>France</li>
+
+          </ul>
+          <ul>
+            <li>Australia</li>
+            <li>Canada</li>
+            <li>America</li>
+            <li>India</li>
+            <li>France</li>
+
+          </ul>
+          <ul>
+            <li>Australia</li>
+            <li>Canada</li>
+            <li>America</li>
+            <li>India</li>
+            <li>France</li>
+
+          </ul>
+         </div>
+       </div>
+
+       <hr color="grey">
+
+       <!-- General links -->
+
+       <div class="general-links">
+         <ul>
+           <li>Privacy</li>
+           <li>Terms</li>
+           <li>Api Policy</li>
+           <li>CSR</li>
+           <li>Security</li>
+           <li>Sitemap</li>
+          </ul>
+
+          <!-- Social media icons -->
+         <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+        
+          
+         </div>
+        
+       </div>
+       
+       <hr color="grey">
+
+       <!--  Copyrights -->
+       <div class="copyright">
+           <p>By continuing past this page, you agree to our terms of service, cookie policy, privacy policy and content policies. All trademarks are properties of their respective owners. &copy; 2008-2019-Zomato <sup>TM</sup> Media Pvt Lmd. All rights reserved.</p>     
+       </div>
+      </div>
+     
+     </footer>
+   
+    
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+</body>
+</html>
