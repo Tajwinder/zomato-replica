@@ -23,7 +23,7 @@ body{
       
        display: flex;
        justify-content: space-between;
-       margin: 20px ;
+       margin: 40px 20px;
        #getApp{
            width: 5em;
        }
@@ -46,6 +46,8 @@ body{
         }
       li{
           margin-right: 20px;
+          margin-top: -15px;
+        
       }  
     } 
    }
@@ -123,6 +125,7 @@ body{
         margin: 0px auto;
         #place,#search-rest,#search-btn{
             border-radius: 5px;
+            height: 40px;
         }
         #search-btn{
             background-color: rgb(235, 64, 64);
