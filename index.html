@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <head>
   <title>Zomato-replica</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+  
     <link rel="stylesheet" href="css/style.css">
  
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
 </head>
 <body>
   <!-- nav section -->
@@ -17,8 +13,8 @@
        <a href="#" id="getApp"><img src="images/get-the-app-plain.svg" alt="" width="30em" >Get the App</a>
        <ul>
          <li><a href="#" id="nav_item_1"><img src="images/order-online.svg" alt="" > Order Food</a></li>
-         <li><a href="#" id="nav_item_1"><img src="images/book-a-table.svg"  alt="" width="10%"> Book a Table</a></li>
-         <li><a href="#" id="nav_item_1"><img src="images/gold.svg" alt="" width="10%" > Zomato Gold</a></li> 
+         <li><a href="#" id="nav_item_2"><img src="images/book-a-table.svg"  alt="" width="10%"> Book a Table</a></li>
+         <li><a href="#" id="nav_item_3"><img src="images/gold.svg" alt="" width="10%" > Zomato Gold</a></li> 
        </ul>
      </div>
    </header>
@@ -35,7 +31,7 @@
        
       <div class="logo">
         <img id="logo" src="images/zomato_flat_bg_logo.svg" alt="" width="100em">
-        <p>Find the best restaurants, cafés, and bars in Mumbai
+        <p>Find the best restaurants, cafés, and bars in Mumbai 
 
         </p>
        </div>
@@ -50,7 +46,7 @@
         
        <input type="text" id="search-rest" placeholder= "Search for restaurants or cuisines..."
        >
-       <input type="button" id="search-btn" value="Search">
+      <button id="search-btn" >Search</button>
       
       </div> 
       
@@ -59,7 +55,7 @@
 
 <!-- order form + Collection -->
 <section class="middle_section">
-  <div class="widget">
+  <div class="wrapper">
   
   
   <div class="collections">
@@ -102,14 +98,14 @@
   <div class="order">
      <h2 id="order-title"  class="title" >Order Food Online</h2>
      <p id="order-subtitle" class="sub-title">Best restaurts delivering to your doorstep</p>
-    <div class="order-box">
+    <div class="widget">
       <h4>Enter your delivery location</h4> <br>
-    <input type="text" class="search-del" placeholder="Type delivery location here" >
-   <input type="button" value="Detect" class="detect-btn"> <br><br>
+    <input type="text" id="search-del" placeholder="Type delivery location here" >
+   <button class="detect-btn">Detect</button> <br><br>
    <input type="button" value="Order Food Online!" class="order-btn">
    <hr>
    <br> <br>
-   <div class="promo_code">
+   <div id="promo_code">
     Use code ZOMATO to get up to 50% OFF. T&Cs apply
    </div>
     </div>
@@ -180,46 +176,45 @@
   <!-- Localities -->
 
   <section class="localities">
-    <h2 id="loc-title"  class="title">popular localities in and around Amritsar</h2>
-    <p id="loc-subtitle" class="sub-title">Explore restaurants, bars, and cafes by locality</p>
+    <h2 id="loc-title"  class="title">Popular localities in and around Mumbai</h2>
+    <p id="loc-subtitle" class="sub-title">Explore restaurants, bars, and cafés by locality</p>
     <div class="lists">
      <ul class="locality-list">
-       <li>Lawrence Road <span class="places">(233)</span></li>
-       <li>Mall Road <span class="places">(255 places)</span></li>
-       <li>Nowelty <span class="places">(55 places)</span></li>
-       <li>Rani Ka Bagh <span class="places">(67 places)</span></li>
-       <li>Golden Temple Complex <span class="places">(34 places)</span></li>
-       <li>Ranjit Avenue <span class="places">(24 places)</span></li>
-       <li>Christal Chowk <span class="places">(53 places)</span></li>
-       <li>Sultanwind gate <span class="places">(21 places)</span></li>
-       <li>East Mohan Nagar <span class="places">(14 places)</span></li>
-       <li>Chheherta <span class="places">(23 places)</span></li>
+       <li>Lower Parel <span class="places">(233)</span></li>
+       <li>Boriwali West <span class="places">(255 places)</span></li>
+       <li>Fort <span class="places">(55 places)</span></li>
+       <li>Colaba <span class="places">(67 places)</span></li>
+       <li>Pali Hill,Bandra West <span class="places">(34 places)</span></li>
+       <li>Veera Desai Area <span class="places">(24 places)</span></li>
+       <li>Panch Pakhadi,Thane west <span class="places">(53 places)</span></li>
+       <li>Mulund West<span class="places">(21 places)</span></li>
+       <li>Oshiwada,Andheri West <span class="places">(14 places)</span></li>
+       <li>Kandivali West <span class="places">(23 places)</span></li>
      </ul>
      <ul class="locality-list">
-      <li>Lawrence Road <span class="places">(233)</span></li>
-      <li>Mall Road <span class="places">(255 places)</span></li>
-      <li>Nowelty <span class="places">(55 places)</span></li>
-      <li>Rani Ka Bagh <span class="places">(67 places)</span></li>
-      <li>Golden Temple Complex <span class="places">(34 places)</span></li>
-      <li>Ranjit Avenue <span class="places">(24 places)</span></li>
-      <li>Christal Chowk <span class="places">(53 places)</span></li>
-      <li>Sultanwind gate <span class="places">(21 places)</span></li>
-      <li>East Mohan Nagar <span class="places">(14 places)</span></li>
-      <li>Chheherta <span class="places">(23 places)</span></li>
+      <li>Lower Parel <span class="places">(233)</span></li>
+      <li>Boriwali West <span class="places">(255 places)</span></li>
+      <li>Fort <span class="places">(55 places)</span></li>
+      <li>Colaba <span class="places">(67 places)</span></li>
+      <li>Pali Hill,Bandra West <span class="places">(34 places)</span></li>
+      <li>Veera Desai Area <span class="places">(24 places)</span></li>
+      <li>Panch Pakhadi,Thane west <span class="places">(53 places)</span></li>
+      <li>Mulund West<span class="places">(21 places)</span></li>
+      <li>Oshiwada,Andheri West <span class="places">(14 places)</span></li>
+      <li>Kandivali West <span class="places">(23 places)</span></li>
     </ul>
     <ul class="locality-list">
-      <li>Lawrence Road <span class="places">(233)</span></li>
-      <li>Mall Road <span class="places">(255 places)</span></li>
-      <li>Nowelty <span class="places">(55 places)</span></li>
-      <li>Rani Ka Bagh <span class="places">(67 places)</span></li>
-      <li>Golden Temple Complex <span class="places">(34 places)</span></li>
-      <li>Ranjit Avenue <span class="places">(24 places)</span></li>
-      <li>Christal Chowk <span class="places">(53 places)</span></li>
-      <li>Sultanwind gate <span class="places">(21 places)</span></li>
-      <li>East Mohan Nagar <span class="places">(14 places)</span></li>
-      <li>Chheherta <span class="places">(23 places)</span></li>
+      <li>Lower Parel <span class="places">(233)</span></li>
+      <li>Boriwali West <span class="places">(255 places)</span></li>
+      <li>Fort <span class="places">(55 places)</span></li>
+      <li>Colaba <span class="places">(67 places)</span></li>
+      <li>Pali Hill,Bandra West <span class="places">(34 places)</span></li>
+      <li>Veera Desai Area <span class="places">(24 places)</span></li>
+      <li>Panch Pakhadi,Thane west <span class="places">(53 places)</span></li>
+      <li>Mulund West<span class="places">(21 places)</span></li>
+      <li>Oshiwada,Andheri West <span class="places">(14 places)</span></li>
+      <li>Kandivali West <span class="places">(23 places)</span></li>
     </ul>
-    
     </div>
    </section>
   </section>

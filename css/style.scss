@@ -55,7 +55,7 @@ body{
     text-align: right;
     a{
         color: white;
-       
+        text-decoration: none;
     }
     a:hover{
         color: white;
@@ -150,7 +150,7 @@ body{
         padding: 20px 10px 50px 10px;
     }
     
-    .widget{
+    .wrapper{
         display: grid;
         grid-template-columns: 70% 30%;
         margin: 50px 0px;
@@ -163,18 +163,28 @@ body{
             
             margin: 0px 0px 0px 30px;
             @media only screen and(max-width:600px){
-              margin: 20px auto 60px auto;
+              margin: 0px auto 60px auto;
               
  
              }
-            .order-box{
+            .widget{
             background-color: white;
             border: 1px solid black;
             border-radius: 5px;
             
             padding: 10px;
             height: 50%;
-           .promo_code{
+            #search-del{
+                width: 70%;
+                height: 30px;
+                border-radius: 3px;
+            }
+            .detect-btn{
+                width: 27%;
+                height: 30px;
+                border-radius: 3px;
+            }
+           #promo_code{
                color: rgb(82, 185, 82);
                font-weight: 600;
            }
